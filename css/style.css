@@ -104,7 +104,8 @@
     background-image: url(../images/img-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    background-position: 30% 50%;
+
 
 .title-section__text {
     font-weight: 900;
