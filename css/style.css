@@ -101,6 +101,9 @@
     padding-top: 200px;
     padding-bottom: 280px;
     text-align: center;
+    background-image: url(../images/img-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title-section__text {
@@ -328,7 +331,7 @@
 }
 
 .container {
-    width: 1200px;
+    width: 1600px;
     margin-right: auto;
     margin-left: auto;
     
