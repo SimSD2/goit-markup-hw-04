@@ -91,12 +91,18 @@
     height: 16px;
 }
 
+.smartphone-icon:hover {
+    stroke: var(--blue);
+}
 
 .envelope-icon {
     width: 16px;
     height: 13px;
 }
 
+.envelope-icon:hover {
+    stroke: var(--blue);
+}
 
 /* Main styling */
 
@@ -305,19 +311,21 @@
     width: 170px;
     height: 92px;
     padding-top: 16px;
-    padding-left: 32px;    
+    padding-left: 32px;  
+    padding-right: 32px;
+    padding-bottom: 16px;  
 }
 
-
+.regulars__list li:hover {
+    border-color: var(--blue);
+    fill:var(--blue)
+}
 .regulars-icons {
     width: 106px;
     height: 60px;
 }
 
-.regulars-icons:hover {
-    stroke: var(--blue);
-    fill: var(--blue);
-}
+
 
 /*Footer styling*/
 
