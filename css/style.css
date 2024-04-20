@@ -28,7 +28,6 @@
 .header {
    
     border-bottom: 1px solid #ececec;
-    margin-bottom: 94px;
 }
 
 .header .up {
@@ -87,11 +86,16 @@
     color: var(--blue);
 }
 
-.contact-icon {
+.smartphone-icon {
     width: 10px;
     height: 16px;
 }
 
+
+.envelope-icon {
+    width: 16px;
+    height: 13px;
+}
 
 
 /* Main styling */
@@ -103,7 +107,7 @@
 
 .title-section {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 180px;
     text-align: center;
     background-image: linear-gradient(180deg,
     rgba(47,48,58,0.4),
@@ -111,8 +115,7 @@
     url(../images/img-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 30% 50%;
-    
+    background-position: 50% 50%;
 }
 
 
@@ -141,11 +144,10 @@
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 19px;
-    margin-top: 30px;   
+    margin-top: 30px; 
 }
 
 .work-ethics {
-    list-style: none;
     display:flex;
     justify-content:center;
     gap: 30px;
@@ -157,6 +159,7 @@
     text-transform: uppercase;
     color: var(--lighter-black);
     margin-bottom:10px;
+    margin-top: 30px;
 }
 
 .work-ethics__text {
@@ -165,8 +168,20 @@
     line-height: 171%;
     color: var(--grey);
     width: 270px;
-    flex-wrap: wrap;
 }
+
+.work-ethics__icons {
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
 
 .activity__title {
     font-weight: 700;
@@ -212,6 +227,40 @@
                0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
 }
+.containers__item ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.containers__list li {
+    padding:12px;
+    border-radius: 50px;
+
+}
+
+.containers__list li:hover {
+    background-color: var(--blue);
+    
+}
+
+.containers__list li:hover .containers-icons {
+    fill: var(--white);
+
+}
+
+.containers-icons{
+    width: 20px;
+    height: 18px;
+}
+
+.containers-icons:hover {
+    
+}
+
 .containers__name {
     font-weight: 500;
     font-size: 16px;
@@ -228,8 +277,6 @@
     color: var(--grey);
     margin-left: 63px;
     margin-right: 62px;
-    padding-bottom: 30px;
-    
 }
 
 .regulars {
@@ -243,16 +290,33 @@
     margin-bottom: 50px;
     text-align: center;
 }
-.regulars__icons {
+.regulars__list {
     list-style: none;
     display: flex;
-    justify-content: center;    
-
+    justify-content: center; 
+    gap:37px;
+    margin-bottom: 94px;
 }
 
-.social__icons {
-    list-style: none;
-    display:flex;
+.regulars__list li {
+    border:1px solid;
+    border-color: #afb1b8;
+    border: radius 4px;
+    width: 170px;
+    height: 92px;
+    padding-top: 16px;
+    padding-left: 32px;    
+}
+
+
+.regulars-icons {
+    width: 106px;
+    height: 60px;
+}
+
+.regulars-icons:hover {
+    stroke: var(--blue);
+    fill: var(--blue);
 }
 
 /*Footer styling*/
@@ -260,6 +324,7 @@
 .footer {
     background-color: var(--dark-grey);
     height: 251px;
+    padding-left: 215px;
 }
 
 .footer__logo {
@@ -306,6 +371,47 @@
     padding-top: 28px;
 }
 
+.basement {
+    display: flex;
+}
+
+.social {
+    margin-left: 70px;
+}
+
+.social__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--original-white);
+    
+}
+
+.social__list {
+    list-style: none;
+    display:flex;
+    gap:10px;
+    margin-top: 20px;
+    
+}
+
+.social__list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding:12px;
+    border-radius: 50px;
+}
+
+.social__list li:hover {
+    background-color: var(--blue);
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+}
+
 
 
 
@@ -315,6 +421,7 @@
     display:flex;
     justify-content: center;
     gap:8px;
+    margin-top: 94px;
 }
 .categories__item {
     background-color: var(--white);
@@ -361,12 +468,15 @@
 }
 
 .cards__item {
-    border: 1px solid #eee;
     margin-bottom: 94px;
 }
 
+.cards__item:hover, .cards__item:focus {
+    border: 1px solid #eee;
+}
+
 .container {
-    width: 1600px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     
